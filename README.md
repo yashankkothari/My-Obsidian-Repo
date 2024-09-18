@@ -1,2 +1,4 @@
 # My-Obsidian-Repo
-Testing My Obisidan Repo and Seeing if it works.
+This is my obsidian repo, anything i want to publish on obsidian will appear here.
+
+
