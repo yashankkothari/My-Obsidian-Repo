@@ -1,6 +1,5 @@
 ## 3.1 Concurrency: Principles of Concurrency, InterProcess Communication, Process/Thread Synchronization.
 
-
 ## 3.2 Mutual Exclusion: Requirements, Hardware Support, Operating System Support (Semaphores and Mutex), Programming Language Support (Monitors)
 ## 3.3  Classical synchronization problems: Readers/Writers Problem, Producer and Consumer problem.
 

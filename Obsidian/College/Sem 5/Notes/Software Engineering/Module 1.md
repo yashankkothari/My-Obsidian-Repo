@@ -40,7 +40,8 @@
 
 • Software process models prescribe a **workflow** in which the software development process elements are interrelated to one another.
 
-### Generic Process Framework
+### Generic Process Framework/SDLC 
+Below are the basic process for an SDLC framework
 
 **• Communication** 
 – Involves communication among the customer and other stake holders; encompasses requirements gathering.
@@ -63,68 +64,68 @@
 
 ### Waterfall Model
 
-• Oldest software lifecycle model and best understood by upper management.
-• Used when requirements are well understood and risk is low. 
-• Work flow is in a linear (i.e., sequential) fashion. 
-• Used often with well-defined adaptations or enhancements to current software. 
-• Requirements are very well documented, clear and fixed. 
-• Product definition is stable. 
-• Technology is understood and is not dynamic. 
-• There are no ambiguous requirements. 
-• The project is short.
+• **Oldest software lifecycle model** and best understood by upper management.
+• Used **when requirements are well understood** and **risk is low.** 
+• Work flow is in a **linear** (i.e., sequential) fashion. 
+• Used often with **well-defined adaptations** or enhancements to current software. 
+• Requirements are **very well documented**, clear and fixed. 
+• Product definition is **stable.** 
+• Technology is understood and is **not dynamic.** 
+• There are **no ambiguous** requirements. 
+• The project is **short.**
 
 ![[{4B696838-765B-418C-B574-36577D473167}.png]]
 
 #### Advantages
-• Simple and easy to understand and use.
-• Easy to manage due to the rigidity of the model – each phase has specific deliverables and a review process.
-• Phases are processed and completed one at a time. 
-• Works well for smaller projects where requirements are very well understood.
+• Simple and **easy to understand** and use.
+• **Easy to manage** due to the rigidity of the model – each phase has specific deliverables and a review process.
+• Phases are processed and completed **one at a time.** 
+• Works well for **smaller projects** where requirements are very well understood.
 • Clearly defined stages. 
-• Process and results are well documented.
+• Process and results are **well documented.**
 
 #### Disadvantages
 • No working software is produced until late during the life cycle. 
-• Doesn't support iteration, so changes can cause confusion.
+• **Doesn't support iteration**, so changes can cause confusion.
 • Difficult for customers to state all requirements explicitly and up front 
 • Requires customer patience because a working version of the program doesn't occur until the final phase. 
-• High amounts of risk and uncertainty. 
+• **High amounts of risk and uncertainty.** 
 
 ### RAD Rapid Application Development
 
-• RAD refers to a development life cycle designed to give much faster development and higher quality systems than the traditional life cycle.
-• In RAD model the functional modules are developed in parallel as prototypes and are integrated to make the complete product for faster product delivery.
-• RAD projects follow iterative and incremental model and have small teams comprising of developers, domain experts, customer representatives and other IT resources working progressively on their component or prototype.
+• RAD refers to a development life cycle designed to give **much faster development and higher quality systems than the traditional life cycle.**
+• In RAD model the functional modules are **developed in parallel as prototypes** and are integrated to make the complete product for faster product delivery.
+• RAD projects follow **iterative and incremental model** and have small teams comprising of developers, domain experts, customer representatives and other IT resources working progressively on their component or prototype.
 • Since there is no detailed preplanning, it makes it easier to incorporate the changes within the development process.
 • Small working teams.
-• The most important aspect for this model to be successful is to make sure that the prototypes developed are reusable. 
+• The most important aspect for this model to be successful is to make sure that the **prototypes developed are reusable.** 
 
 ![[{09FACBBC-7ABA-4148-81B2-A62A7323EFEA}.png]]
 
 #### Advantages
-• Changing requirements can be accommodated. 
-• Progress can be measured. 
-• Iteration time can be short with use of powerful RAD tools. 
-• Increases reusability of components. 
-• Reduced development time. 
-• Encourages customer feedback. 
+• **Changing requirements** can be accommodated. 
+• **Progress** can be measured. 
+• **Iteration time can be short** with use of powerful RAD tools. 
+• **Increases reusability** of components. 
+**• Reduced** development time. 
+• Encourages **customer feedback.** 
 • Integration from very beginning solves a lot of integration issues.
 
 #### Disadvantages
 • Dependency on technically strong team members for identifying business requirements. 
 • Only system that can be modularized can be built using RAD. 
-• Inapplicable to cheaper projects as cost of modeling and automated code generation is very high. 
-• Requires user involvement throughout the life cycle.
-• Suitable for project requiring shorter development times. 
-• Management complexity is more.
+• **Inapplicable to cheaper projects** as cost of modeling and automated code generation is very high. 
+• **Requires user involvement** throughout the life cycle.
+• Suitable for project requiring **shorter development times.** 
+• **Management complexity** is more.
 
 ### Spiral Model
 
-• Used when requirements are not well understood and risks are high.
+• Used when **requirements are not well understood and risks are high.**
 • Inner spirals focus on identifying software requirements and project risks; may also incorporate prototyping. 
 • Outer spirals take on a classical waterfall approach after requirements have been defined, but permit iterative growth of the software.
 • Requires considerable expertise in risk assessment. 
-• Extends waterfall model by adding iteration to explore /manage risk. 
+• **Extends waterfall model by adding iteration** to explore /manage risk. 
 • Key idea: on each iteration identify and solve the sub-problems with the highest risk.
 • New product line which should be released in phases to get enough customer feedback. 
 • Significant changes are expected in the product during the development cycle
@@ -134,17 +135,17 @@
 ![[{D4EE5AE2-35BA-42A4-9B57-19038173CD07}.png]]
 
 #### Advantages
-• Realism: the model accurately reflects the iterative nature of software development on projects with unclear requirements Allows for extensive use of prototypes.
+• **Realism**: the model accurately reflects the iterative nature of software development on projects with unclear requirements Allows for extensive use of prototypes.
 • Requirements can be captured more accurately.
 • Users see the system early. 
-• Development can be divided into smaller parts and more risky parts can be developed earlier which helps better risk management. 
-• Flexible: incorporates the advantages of the waterfall and evolutionary methods
+• Development can be **divided into smaller parts** and more risky parts can be developed earlier which helps better risk management. 
+• **Flexible:** incorporates the advantages of the waterfall and evolutionary methods
 
 #### Disadvantages
-• Management is more complex. 
+• Management is **more complex.** 
 • End of project may not be known early.
-• Not suitable for small or low risk projects and could be expensive for small projects. 
-• Spiral may go indefinitely. 
+• Not suitable for small or low risk projects and could be **expensive** for small projects. 
+• **Spiral may go indefinitely.** 
 • Large number of intermediate stages requires excessive documentation.
 
 ### Open Source Model
@@ -163,10 +164,10 @@
 
 ### Agile Process Model
 
-•  Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability and customer satisfaction by rapid delivery of working software product. 
-•  Agile Methods break the product into small incremental builds. These builds are provided in iterations. Each iteration typically lasts from about one to three weeks. every iteration involves cross functional teams working simultaneously on various areas like planning, requirements analysis, design, coding, unit testing, and acceptance testing. 
-•  At the end of the iteration a working product is displayed to the customer and important stakeholders. 
-•  Iterative approach is taken and working software build is delivered after each iteration. Each build is incremental in terms of features; the final build holds all the features required by the customer. 
+•  Agile SDLC model is a **combination of iterative and incremental process models** with focus on process adaptability and customer satisfaction by **rapid delivery of working software product**. 
+•  Agile Methods break the product into **small incremental builds.** These builds are provided in iterations. **Each iteration typically lasts from about one to three weeks**. every iteration involves cross functional teams working simultaneously on various areas like planning, requirements analysis, design, coding, unit testing, and acceptance testing. 
+•  **At the end of the iteration a working product is displayed to the customer and important stakeholders.** 
+•  Iterative approach is taken and **working software build is delivered after each iteration**. Each build is incremental in terms of features; **the final build holds all the features required by the customer.** 
 •  Agile processes must be adapted incrementally to manage unpredictability 
 
 ![[{E1F395DC-09A7-432B-96D6-1775FD1D7023}.png]]
@@ -174,20 +175,20 @@
 ![[Pasted image 20240920015812.png]]
 
 #### Advantages
-• Is a very realistic approach to software development. 
-• Promotes teamwork and cross training. 
+• Is a **very realistic approach** to software development. 
+• **Promotes teamwork** and cross training. 
 • Functionality can be developed rapidly and demonstrated. 
 • Suitable for fixed or changing requirements. 
 • Delivers early partial working solutions. 
 • Good model for environments that change steadily.
-• Easy to manage. 
-• Little or no planning required. 
-• Highest priority is to satisfy the customer.
+• **Easy to manage.** 
+• Little or **no planning** required. 
+• **Highest priority** is to satisfy the **customer.**
 
 #### Disadvantages
-• In case of some software deliverables, especially the large ones, it is difficult to assess the effort required at the beginning of the software development life cycle. 
+• In case of some software deliverables, especially the large ones, it is **difficult to assess the effort required at the beginning of the software development life cycle.** 
 • For Designing and Documentation, agile methodology pays less importance. 
-• The project can easily get taken off track if the customer representative is not clear what final outcome that they want. 
+• The **project can easily get taken off track** if the customer representative is not clear what final outcome that they want. 
 • For Agile methodology, experience resource will be needed.
 
 ### Agile Process Models
@@ -201,51 +202,60 @@
 • Agile Modeling (AM)
 
 #### Extreme Programming (XP) 
-• Relies on object-oriented approach as it is based on set rules and practices that occur within the activities defined.
-• Agile processes must be adapted incrementally to manage unpredictability
+- XP is based on **object-oriented practices** and a set of defined rules.  
+- **Agile adaptation** is incremental to handle unpredictability effectively.
 
-**XP Planning** 
-• Begins with the creation of “user stories” 
-• Agile team assesses each story and assigns a cost 
-• Stories are grouped to for a deliverable increment 
-• A commitment is made on delivery date 
-• After the first increment “project velocity” is used to help define subsequent delivery dates for other increments
+##### XP Planning  
+- Begins with the creation of **user stories**.  
+- The Agile team **evaluates** and **assigns a cost** to each story.  
+- Stories are **grouped** to form deliverable increments.  
+- The team **commits to a delivery date** for the first increment.  
+- **Project velocity** (speed of work) from the first increment is used to set subsequent delivery dates.
 
-**XP Design**
-• Follows the KIS (Keep it simple) principle 
-• Encourage the use of CRC (class responsibility collaborator-effective mechanism for problem solving as uses object oriented approach) cards for difficult design problems, suggests the creation of “spike solutions”—a design prototype
-• Encourages “refactoring” or “restructuring”—an iterative refinement of the internal program design
+##### XP Design
+- Follows the **KISS principle** (Keep It Simple, Stupid).  
+- Utilizes **CRC (Class Responsibility Collaborator) cards** for solving complex design problems.  
+- Suggests **spike solutions** (design prototypes) for difficult problems.  
+- Encourages **refactoring** (continuous improvement of the code structure).
 
-**XP Coding**
-• Recommends the construction of a unit test for a store before coding commences 
-• Encourages “pair programming-two people working on same program”
+##### XP Coding 
+- Unit tests are constructed **before coding** begins.  
+- Promotes **pair programming** (two developers work on the same code).
 
-**XP Testing**
-• All unit tests are executed daily 
-• “Acceptance tests” are defined by the customer and executed to assess customer visible functionality
+##### XP Testing
+- **Daily execution of unit tests** to ensure code integrity.  
+- **Acceptance tests** are defined by the customer and used to validate visible functionality.
 
 #### Adaptive Software Development (ASD)
 
-• Technique for building complex software and systems. 
-• Self-organization arises when independent agents cooperate to create a solution to a problem that is beyond the capability of any individual agent.
-• Emphasizes self-organizing teams, interpersonal collaboration, and both individual and team learning 
-• Adaptive Software Development practices provide ability to accommodate change and are adaptable in turbulent environments with products evolving with little planning and learning. 
-• The Adaptive Software Development Lifecycle focuses on results, not tasks, and the results are identified as application features.
+Here’s a more concise, exam-friendly framing of Adaptive Software Development (ASD):
 
-**ASD — distinguishing features**
-• 1. Mission Driven The activities in the each development cycle must be justified against the overall project mission. 
-• 2. Component Based Development activities should not be task oriented but rather focus on developing working software. It focuses on results. 
-• 3. Iterative Redoing of development instead of doing it right the first time
-• 4. Time Boxed Setting fixed delivery times for projects 
-• 5. Change Tolerant Able to incorporate change is viewed as a competitive advantage (not as a problem). 
-• 6. Risk Driven The development of high risk items should begin as early as possible.
 
-**ASD phases**
-• Speculation 
-✓ project initiated- customer mission statement , delivery dates , requirements specified 
-✓ adaptive cycle planning takes place- requirements will keep changing and those changes to be adapted. 
-• Collaboration (requires teamwork from a jelled team, joint application development is preferred requirements gathering approach) 
-• Learning (components implemented and testes, focus groups provide feedback, formal technical reviews, postmortems)
+**Adaptive Software Development (ASD) Overview**  
+- A **technique for building complex systems** through self-organization, where independent agents collaborate to solve problems beyond the capability of any individual.  
+- Focuses on **self-organizing teams**, interpersonal collaboration, and continuous learning.  
+- **Adaptable to change** in turbulent environments, allowing software to evolve with minimal planning.
+
+**Distinguishing Features of ASD**  
+1. **Mission-Driven**: Activities are aligned with the overall project mission.  
+2. **Component-Based**: Focus on delivering **working software** instead of task-oriented development.  
+3. **Iterative**: Redoing development in cycles, improving with each iteration.  
+4. **Time-Boxed**: Projects have **fixed delivery times**.  
+5. **Change-Tolerant**: Embraces change as a competitive advantage.  
+6. **Risk-Driven**: High-risk items are addressed early in the development process.
+
+**ASD Phases**  
+1. **Speculation**:  
+   - Project is initiated with a **customer mission statement**, delivery dates, and initial requirements.  
+   - **Adaptive cycle planning** to accommodate changing requirements.  
+2. **Collaboration**:  
+   - Requires teamwork, often through **joint application development** for requirements gathering.  
+3. **Learning**:  
+   - Components are implemented and tested; feedback is gathered from **focus groups** and formal reviews.  
+   - **Postmortem analysis** helps improve future cycles.
+
+
+This format highlights the essential aspects of ASD in a straightforward, memorable way for exams.
 
 ![[{3A20A4DB-0520-40D3-B35F-95642E2D8A5E}.png]]
 

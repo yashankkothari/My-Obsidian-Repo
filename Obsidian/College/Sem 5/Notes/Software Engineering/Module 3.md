@@ -337,8 +337,7 @@ Architectural Design • The software must be placed into context
 An archetype is a class or **pattern that represents a core abstraction that is critical to the design** of an architecture for the target system. they are derived from the analysis model
 
 ### Cohesion
-• Cohesion implies that a component or class encapsulates only attributes and operations that are closely related to one another and to the class or component itself
-
+• Cohesion implies that a component or class encapsulates only attributes and operations that are closely related to one another and to the class or component itself, it is a measure of functional strength of a module, the more the cohesion, the better it is because many functions are grouped together to a single module
 #### Different Types of Cohesion
 **(1) Functional** - Based on **operations** , this level of cohesion occurs when a component **performs a targeted computation** and then returns a result.
 **(2) Layer** - Exhibited by packages, components, and classes, this type of cohesion occurs when a **higher layer accesses the services of a lower layer**, but **lower layers do not access higher layers.**
@@ -347,7 +346,7 @@ An archetype is a class or **pattern that represents a core abstraction that is 
 ![[{8C561F97-CA23-4FC3-A546-4D4D36FC5648}.png]]
 
 ### Coupling
-• **Coupling** is a qualitative measure of the **degree to which classes are connected to one another.**
+• **Coupling** is a qualitative measure of the **degree to which classes are connected to one another.** the least the degree the more favorable, it indicates how closely 2 modules are working together, it is the measure of dependency of 2 modules, the more independent the better
 
 #### Different types of coupling
 (1) **Content coupling Occurs when one component secretly modifies data** that is internal to another component 

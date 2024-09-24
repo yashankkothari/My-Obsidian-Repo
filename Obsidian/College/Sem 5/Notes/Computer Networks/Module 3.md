@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 ## 3.1 Network layer services, IPv4, strategies to bridge the limitations (IP sub netting, CIDR, NAT, Addressing, Options, Extension headers, Packet forwarding, Congestion Control)
 
 
