@@ -261,7 +261,145 @@
 ## 1.2 Introduction to Graphics software OpenGL ,coordinate reference frames, specifying two-dimensional world coordinate reference frames in OpenGL, OpenGL point functions, OpenGL line functions, point attributes, line attributes, curve attributes, OpenGL point attribute functions, OpenGL line attribute functions, Line drawing algorithms(DDA, Bresenham’s), circle generation algorithms (Bresenham’s).
 
 ### OpenGL
-**OpenGL Overview**: OpenGL (Open Graphics Library) is a cross-platform graphics API designed for rendering 2D and 3D vector graphics. It provides a set of functions that enable developers to create high-quality graphical applications.
+- **Overview**:
+    - OpenGL is a **cross-language** and **cross-platform** (platform-independent) API that enables developers to render 2D and 3D vector graphics using polygons to represent images.
+- **Hardware-Based Design**:
+    - The OpenGL API is primarily designed to operate with hardware, allowing for efficient rendering through the Graphics Processing Unit (GPU).
+
+#### Design
+- **Function Set**:
+    - OpenGL is defined as a set of functions that can be called by client programs to perform various graphics operations. This modular design allows for flexibility and extensibility in graphics programming.
+
+#### Development
+- **Evolving API**:
+    - OpenGL is continuously evolving, with the Khronos Group regularly releasing new versions that introduce extended features and improvements over previous versions.
+    - GPU vendors may provide additional functionality through extensions, allowing for enhanced performance and capabilities specific to their hardware.
+
+#### Associated Libraries
+- **Complexity Management**:
+    - OpenGL can be complex to use directly, so various utility libraries have been developed to simplify the process:
+        - **OpenGL Utility Toolkit (GLUT)**: Originally provided functionality for window management and handling user input.
+        - **FreeGLUT**: An updated version of GLUT that offers additional features and fixes.
+        - **GLEE (OpenGL Extension Engine)**: Helps manage OpenGL extensions and simplifies their usage.
+        - **GLEW (OpenGL Extension Wrangler Library)**: A cross-platform C/C++ library that manages OpenGL extensions efficiently.
+        - **glbinding**: A modern C++ binding for OpenGL that provides a safer and more convenient API.
+
+#### Implementation
+- **Mesa 3D**:
+    - Mesa 3D is an open-source implementation of OpenGL that supports software rendering and can leverage hardware acceleration on platforms such as BSD and Linux.
+    - It provides a platform for testing and developing OpenGL applications without requiring specific hardware.
+
+This structured approach allows developers to harness the full power of graphics rendering while maintaining portability across different platforms and languages.
+
+### OpenGL Rendering Pipeline
+#### COLOR
+![[{8B12D73D-728F-437B-9E67-95ADF0CE60AA}.png]]
+
+#### The such function calls are formatted.
+![[{B8D37E11-9F97-456C-B741-689B0F1A86E6}.png]]
+
+#### Command suffixes and argument data types.
+![[{24A622A7-C3DB-4ADF-8C2D-2E3613BF11B9}.png]]
+
+#### The OpenGL “State”
+
+##### OpenGL State Management
+- **State Variables**: 
+  - OpenGL maintains numerous state variables that affect rendering behavior, including:
+    - **Current Point Size**: Determines the size of points drawn.
+    - **Current Drawing Color**: The color used for drawing shapes and objects.
+    - **Current Background Color**: The color that fills the background of the window.
+
+- **State Persistence**: 
+  - The value of each state variable remains active until it is explicitly changed by the programmer.
+
+##### Setting Colors
+- **Color Functions**: 
+  - Colors in OpenGL can be set using the `glColor3f` function, where the parameters represent the red, green, and blue components of the color. Each component ranges from **0.0** to **1.0**.
+
+  - **Examples**:
+    - `glColor3f(1.0, 0.0, 0.0);` // Sets the drawing color to **red**.
+    - `glColor3f(0.0, 0.0, 0.0);` // Sets the drawing color to **black**.
+    - `glColor3f(1.0, 1.0, 1.0);` // Sets the drawing color to **white**.
+    - `glColor3f(1.0, 1.0, 0.0);` // Sets the drawing color to **yellow**.
+
+##### Background Color
+- **Setting Background Color**: 
+  - The background color can be defined using the `glClearColor` function, which specifies the RGBA (Red, Green, Blue, Alpha) values:
+    - `glClearColor(red, green, blue, alpha);`
+    - The **alpha** parameter controls transparency:
+      - **Fully transparent**: A = 0.0
+      - **Fully opaque**: A = 1.0
+
+##### Clearing the Window
+- **Clearing the Color Buffer**: 
+  - To clear the entire window and fill it with the background color, use:
+    - `glClear(GL_COLOR_BUFFER_BIT);`
+  - Here, `GL_COLOR_BUFFER_BIT` is a constant predefined in OpenGL, indicating that the color buffer should be cleared.
+
+This state management system allows for flexible and dynamic graphics rendering in OpenGL applications, enabling developers to create visually appealing scenes and effects.
+
+#### Indexed Color
+
+![[{3350CEF0-8553-4178-93D0-C1F1F75F8A4D}.png]]
+
+- **Pixel Representation**: 
+  - Each pixel in an indexed color system is represented by an integer value (index) ranging from **0** to **(2^k) - 1**, where **k** indicates the number of bits used for the index.
+
+- **Color Component Precision**: 
+  - If each color component (red, green, blue) is defined with a precision of **m bits**, it allows for:
+    - **2^m** different shades of red,
+    - **2^m** different shades of green,
+    - **2^m** different shades of blue.
+
+- **Total Color Combinations**: 
+  - This results in a potential total of **2^(3m)** distinct colors that can be represented on the display.
+
+- **Frame Buffer Limitation**: 
+  - However, the frame buffer can only specify **2^k** colors from this larger palette, meaning that while many colors may be available, only a limited subset can be utilized at any given time in the display output. 
+
+This method is particularly efficient for applications where a limited color palette is sufficient, such as in certain types of images, animations, or applications requiring reduced memory usage.
+
+#### Setting Point Size in OpenGL
+
+- Use the function:
+  
+  ```c
+  glPointSize(2.0);
+  ```
+
+- **Purpose**: This sets the rendered point size to **2 pixels wide**. 
+
+- **Usage**: Useful for enhancing visibility of points in graphics applications.
+
+#### The Orthographic View
+
+- **Definition**: The simplest and default view in OpenGL.
+- **Characteristics**:
+  - Objects retain their size regardless of their distance from the camera.
+  - Parallel lines remain parallel, without convergence.
+- **Usage**: Ideal for 2D graphics and technical drawings where scale and dimensions are crucial.
+
+![[{067877BF-899C-49EE-A985-C1ED50AD25B6}.png]]
+
+#### Two-Dimensional Viewing
+![[{4ED603A5-9F9C-48C2-A855-0F1B76B34E0A}.png]]
+
+### OpenGL Utility Toolkit (GLUT)
+
+- **Purpose**: A library of functions designed to provide a simple interface between applications and the underlying system.
+- **Implementation**: 
+  - Abstracts away details specific to the windowing or operating system.
+  - Ensures that the complexities of the system are hidden from the user.
+- **Benefit**: Simplifies the development process by allowing developers to focus on graphics programming without worrying about system-specific intricacies.
+
+### Establishing the Coordinate System in OpenGL
+
+- **glVertex**: Defines a vertex in 2D or 3D space.
+- **glVertex3**: Specifies a vertex using three coordinates (x, y, z).
+- **glVertex3f**: Defines a vertex using three coordinates of type `GLfloat` (e.g., `glVertex3f(1.0f, 2.0f, 3.0f)`).
+- **glVertex3fv**: Specifies a vertex using three `GLfloat` coordinates contained within a vector (e.g., `GLfloat coords[] = {1.0f, 2.0f, 3.0f}; glVertex3fv(coords);`).
+- **Alternative**: `glVertex3fl` allows defining a vertex using a list of arguments instead of a vector.
 
 ### Coordinate Reference Frames
 
@@ -469,3 +607,31 @@ The disadvantages of Bresenham Circle Drawing Algorithm are-
 - This algorithm suffers when used to generate complex and high graphical images.
 - There is no significant enhancement with respect to performance.
 
+### Line Drawing using moveto() and lineto()
+
+- **moveto(x, y)**: Sets the current position (CP) to the coordinates (x, y).
+- **lineto(x, y)**: Draws a line from the current position (CP) to (x, y), then updates the current position to (x, y).
+- **Example**: To draw a line from (x1, y1) to (x2, y2), use:
+  ```c
+  moveto(x1, y1);
+  lineto(x2, y2);
+  ```
+- **Polyline**: For a series of points  (x0, y0), (x1, y1)... (xn-1}, yn-1}) iterate through the points, using `moveto` and `lineto` for each:
+  ```c
+  GLintPoint CP; // Global current position
+  ```
+
+### Mouse interaction
+
+- **Function Prototype**: Define the mouse event handler with the following prototype:
+  ```c
+  void myMouse(int button, int state, int x, int y);
+  ```
+- **Parameters**:
+  - **button**: Indicates which mouse button was pressed or released (values can be `GLUT_LEFT_BUTTON`, `GLUT_MIDDLE_BUTTON`, or `GLUT_RIGHT_BUTTON`).
+  - **state**: Represents the state of the button (either `GLUT_DOWN` or `GLUT_UP`).
+  - **x**: The x-coordinate of the mouse pointer when the event occurred.
+  - **y**: The y-coordinate of the mouse pointer when the event occurred.
+- **Event Handling**: When a mouse event occurs, the system calls `myMouse()` and provides the respective values for these parameters.
+
+# Made By Yashank
