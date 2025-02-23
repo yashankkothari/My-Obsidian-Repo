@@ -225,6 +225,8 @@ Below are the basic process for an SDLC framework
 ##### XP Testing
 - **Daily execution of unit tests** to ensure code integrity.  
 - **Acceptance tests** are defined by the customer and used to validate visible functionality.
+![[Pasted image 20241118011916.png]]
+
 
 #### Adaptive Software Development (ASD)
 
