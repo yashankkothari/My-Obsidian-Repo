@@ -14,7 +14,6 @@
 
 ## II. Protecting Programs and Data (Intellectual Property)
 
-This section covers the primary legal mechanisms for protecting software and data.
 
 ### A. Copyrights
 
@@ -67,7 +66,7 @@ This section covers the primary legal mechanisms for protecting software and dat
 
 ### D. Comparison Table (Slide 6)
 
-*   ***[Instruction: Insert the table from Slide 6 here. This table visually contrasts Copyrights, Patents, and Trade Secrets based on criteria like: Protects What?, Requirement, Duration, Legal Action.]***
+![[Pasted image 20250429023256.png]]
 *   **Summary:**
     *   Copyright = Expression (automatic, long duration, protects against copying).
     *   Patent = Invention/Process (requires application/novelty, shorter duration, protects against making/using/selling).
@@ -244,7 +243,7 @@ Beyond legal requirements, ethical principles guide behavior in computing.
 
 ### A. Law vs. Ethics (Slide 15)
 
-*   ***[Instruction: Insert the table from Slide 15 comparing Law and Ethics. Key distinctions include: Source (Formal/Govt vs. Informal/Personal/Societal), Applicability (Jurisdiction vs. Universal/Group), Enforcement (Courts/Police vs. Conscience/Reputation), Conflict Resolution (Formal Legal vs. Principles/Debate).]***
+![[Pasted image 20250429023322.png]]
 *   **Summary:** Laws are formal rules with legal consequences; ethics are moral principles guiding right/wrong conduct, often without formal enforcement but with social/personal consequences. An action can be legal but unethical, or illegal but potentially perceived as ethical in some contexts (e.g., civil disobedience).
 
 ### B. Framework for Ethical Analysis (Slide 16)
@@ -265,7 +264,7 @@ A structured approach to evaluating ethical dilemmas:
     *   **(Potentially Others):** Virtue Ethics (focus on character), Rights-based ethics, etc.
 *   📚 **Additional Resource:** Explore resources like the Stanford Encyclopedia of Philosophy or Markkula Center for Applied Ethics (Santa Clara University) for deeper dives into ethical theories.
 
-### D. Ethical Scenarios/Case Studies (Slides 18-25)
+### D. Ethical Scenarios/Case Studies
 
 *(Brief summaries and key ethical questions for each)*
 
@@ -298,7 +297,7 @@ A structured approach to evaluating ethical dilemmas:
 
 ---
 
-## IX. Lecture Summary (Slide 26)
+## IX. Summary (Slide 26)
 
 *   Legal tools like **copyrights, patents, and trade secrets** offer distinct protections for software IP.
 *   Legal and contractual details shape **relationships** between employees, employers, vendors, and customers regarding software.
@@ -351,6 +350,4 @@ A structured approach to evaluating ethical dilemmas:
 
 ---
 
-**End of Lecture Notes**
-
-I hope these structured notes are helpful! Let me know when you have material from the next lecture.
+# **Made by Yashank**
