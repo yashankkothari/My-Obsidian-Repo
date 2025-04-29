@@ -31,11 +31,9 @@ Web browsers are primary interfaces to the internet and frequent targets for att
     *   Forms: Physical USB dongles, keyboard overlays, malware installed on the system.
     *   Scope: Not limited to browsers; captures passwords, messages, etc., system-wide.
     *   *Real-world example:* Malware delivered via phishing email installs a keylogger to steal online banking credentials.
-    *   *Potential Exam Question:* Define a keystroke logger and describe two ways it can be implemented.
 *   **Page-in-the-Middle:**
     *   **Definition:** User is unknowingly redirected to a malicious page controlled by the attacker, different from the intended destination.
     *   Effect: Similar to MitB; allows attacker to intercept, view, and modify user input (credentials, form data).
-    *   *Thought Question:* How does Page-in-the-Middle technically differ from DNS poisoning or Pharming attacks?
 *   **Program Download Substitution:**
     *   **Definition:** Attacker tricks user into downloading malware disguised as a legitimate or desirable program from a malicious webpage.
     *   Common use: Delivering spyware, adware, trojans.
@@ -85,7 +83,6 @@ Attackers create deceptive websites to trick users.
 *   **Drive-By Download:**
     *   **Definition:** The **unintentional download and execution of code** onto a user's computer simply by visiting a compromised or malicious website, without requiring the user to explicitly click a download link.
     *   Causes: Can be initiated via exploitation of browser vulnerabilities, clickjacking, fake code execution, etc.
-    *   *Potential Exam Question:* Explain what a drive-by download is and list two common attack vectors that can lead to it.
 ![[Pasted image 20250429001235.png]]
 
 **Section III Takeaways:** Attackers use fake websites, disguised malicious code, tracking bugs, clickjacking, and drive-by downloads to compromise users who visit or interact with malicious web pages.
@@ -105,7 +102,6 @@ Injecting malicious code or commands into data inputs that are then processed by
     Cool<br>story.<br>KCTVBigFan<script src=http://badsite.com/xss.js></script>
     ```
     This script will execute for any user viewing the comment.
-*   *Potential Exam Question:* Define Cross-Site Scripting (XSS) and explain how improperly handled user input can lead to this vulnerability.
 
 ### B. SQL Injection (SQLi)
 
@@ -123,7 +119,7 @@ Injecting malicious code or commands into data inputs that are then processed by
         QUERY = "SELECT * FROM trans WHERE acct = '2468' OR '1'='1'; "
         ```
         The `OR '1'='1'` condition is always true, potentially dumping all transaction records.
-*   *Thought Question:* Beyond data theft, what other malicious actions can be performed via SQL Injection (e.g., modifying data, dropping tables, executing commands)?
+
 
 ### C. Dot-Dot-Slash (Directory Traversal)
 
@@ -137,7 +133,7 @@ Injecting malicious code or commands into data inputs that are then processed by
 *   **Definition:** Injecting **SSI directives** (commands for the web server) into user input fields on websites that support and process SSI within user-supplied data.
 *   **SSI:** An interpreted server-side scripting language for basic web server tasks (e.g., including file content, executing server commands).
 *   Mechanism: Similar to XSS, if user input containing SSI directives is processed by the server's SSI interpreter, the directives execute with server privileges.
-*   `[Clarification Needed]: Provide a simple example of a malicious SSI directive an attacker might inject (e.g., `<!--#exec cmd="ls /" -->`).`
+
 
 ### E. Countermeasures to Injection Attacks
 
@@ -166,7 +162,6 @@ Injecting malicious code or commands into data inputs that are then processed by
     *   Laws (e.g., CAN-SPAM): Generally **ineffective** due to jurisdictional issues and anonymity.
     *   **Email Filters:** Have become significantly effective (Bayesian filters, reputation filters, etc.).
     *   ISP Volume Limitations: Throttling email sending makes mass spamming harder.
-*   *Thought Question:* Why are anti-spam laws often difficult to enforce effectively across borders?
 
 ---
 **Section V Takeaways:** Spam constitutes a vast majority of email. While laws are largely ineffective, technical filters and ISP limitations provide significant defense.
@@ -275,7 +270,6 @@ Social engineering attacks, typically via email or fake websites, aimed at trick
 
 *   Effective phishing defense requires multiple layers: technical controls (filters, DMARC), user training/awareness, secure processes.
 
-*   *Potential Exam Question:* Differentiate between mass phishing, whaling, and spear phishing. List five indicators that might suggest an email is a phishing attempt. Explain the purpose of DMARC and its reliance on SPF and DKIM.
 
 ---
 **Section VI Takeaways:** Phishing uses deception (often via email) to steal credentials or install malware. Spear phishing is highly targeted and effective. Defense requires user vigilance (STOP. THINK. CONNECT., verify links, check HTTPS) and technical controls like DMARC for organizations.
@@ -294,7 +288,6 @@ AI-generated synthetic media that can convincingly mimic a person's voice or app
 
 *   Technology exists to create realistic fake videos of individuals.
 
-*   *Thought Question:* How could deep fake audio or video be combined with spear phishing campaigns to make them even more convincing and dangerous?
 
 ---
 **Section VII Takeaways:** AI-powered deep fakes (audio and video) represent an emerging threat capable of bypassing traditional security controls through highly convincing impersonation, enabling sophisticated fraud and social engineering.
@@ -304,7 +297,7 @@ AI-generated synthetic media that can convincingly mimic a person's voice or app
 
 Developing a formal strategy and documentation for protecting organizational assets.
 
-### A. Contents of a Good Security Plan (Slide 34)
+### A. Contents of a Good Security Plan 
 
 A comprehensive security plan typically includes:
 
@@ -317,7 +310,7 @@ A comprehensive security plan typically includes:
 7.  **Maintenance:** Procedures for periodic review and updates.
 *   *Mnemonic:* **P**leasant **C**ows **R**arely **R**un **A**cross **T**own **M**agnificently (Policy, Current State, Requirements, Recommended Controls, Accountability, Timetable, Maintenance).
 
-### B. Security Policy (Slide 35)
+### B. Security Policy 
 
 *   **Definition:** A high-level statement of security purpose and intent.
 *   **Key Questions Addressed:**
@@ -326,7 +319,7 @@ A comprehensive security plan typically includes:
     *   What type of access (read, write, execute) is allowed per user/resource?
 *   **Specifications:** Should define organizational security goals (e.g., availability vs. confidentiality priority), assign responsibility (e.g., security team vs. users), and show organizational commitment (e.g., reporting structure of security team).
 
-### C. Assessment of Current Security Status (Slide 36)
+### C. Assessment of Current Security Status 
 
 *   Based on a **Risk Analysis**: a systematic investigation of the system, environment, and potential threats/vulnerabilities.
 *   Defines the **scope** of security responsibility:
@@ -335,7 +328,7 @@ A comprehensive security plan typically includes:
     *   Who is explicitly excluded.
     *   Clear boundaries of responsibility.
 
-### D. Security Requirements (Slide 37)
+### D. Security Requirements 
 
 *   **Definition:** Functional or performance demands needed to achieve the desired security level.
 *   Origin: Derived from business needs, compliance mandates (e.g., GDPR, HIPAA, PCI-DSS), government standards.
@@ -349,7 +342,7 @@ A comprehensive security plan typically includes:
     *   **Traceability:** Can be linked back to source (policy, risk, regulation).
 *   *Mnemonic:* **C**an **C**onsistent **C**ompleteness **R**eally **N**urture **V**erifiable **T**raceability?
 
-### E. Responsibility for Implementation (Slide 38)
+### E. Responsibility for Implementation 
 
 *   The plan must clearly assign **roles and responsibilities** for implementing security measures.
 *   Common Roles:
@@ -360,7 +353,7 @@ A comprehensive security plan typically includes:
     *   Information Officers (data lifecycle management, retention, disposal).
     *   Personnel/HR Staff (employee screening, training coordination).
 
-### F. Timetable and Plan Maintenance (Slide 39)
+### F. Timetable and Plan Maintenance 
 
 *   **Timetable:** Security plans require phased implementation. The timetable outlines *when* specific controls or actions will be performed, prioritizing the most critical risks first.
 *   **Maintenance & Extensibility:** The plan is a living document. It must:
@@ -368,7 +361,7 @@ A comprehensive security plan typically includes:
     *   Include procedures for managing changes and growth.
     *   Specify a schedule for **periodic review and updates**.
 
-### G. Inputs to the Security Plan (Slide 40)
+### G. Inputs to the Security Plan 
 
 ![[Pasted image 20250429001512.png]]
     *   Business Objectives & Strategy
@@ -379,7 +372,7 @@ A comprehensive security plan typically includes:
     *   Technology Architecture
     *   Organizational Policies
 
-### H. Security Planning Team Members (Slide 41)
+### H. Security Planning Team Members 
 
 *   Effective planning requires broad participation across the organization.
 *   Typical Representatives:
@@ -393,7 +386,7 @@ A comprehensive security plan typically includes:
     *   Management
     *   Legal/Compliance
 
-### I. Assuring Commitment to a Security Plan (Slide 42)
+### I. Assuring Commitment to a Security Plan 
 
 *   A plan without commitment is useless. Success requires buy-in from:
     *   **Planning Team:** Must be sensitive to the needs and impacts on affected groups.
