@@ -3,7 +3,7 @@
 ![[CHAPTER 1.pdf]]
 
 ## Module 2
-![[Chapter 2.pdf]]
+![[Attachments/Chapter 2.pdf]]
 
 ## Module 3
 ![[Chapter 3.pdf]]
