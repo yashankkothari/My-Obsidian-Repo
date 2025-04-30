@@ -591,7 +591,7 @@ int main(int argc, char *argv[]) {
 
 ---
 
-## **VIII. Lecture Summary & Key Takeaways**
+## **VIII.  Summary & Key Takeaways**
 
 *   **Buffer Overflows** remain a significant threat, especially in C/C++ code, stemming from writing past allocated memory boundaries, often targeting the stack's return address to hijack execution.
 *   Understanding **memory layout** (Stack, Heap, Data, Code) is crucial for predicting overflow impact.
@@ -637,52 +637,6 @@ int main(int argc, char *argv[]) {
 *   **Heuristics (Malware Detection):** Detecting suspicious characteristics/behavior.
 *   **Least Privilege:** Principle of granting only necessary permissions.
 
----
-
-## **X. Potential Exam Questions**
-
-1.  Define buffer overflow. Explain how a stack buffer overflow can lead to arbitrary code execution, mentioning the role of the return address and shellcode.
-2.  Compare and contrast Compile-Time defenses (give 2 examples) and Run-Time defenses (give 2 examples) against buffer overflows. Which type is better suited for protecting legacy software and why?
-3.  What is ASLR and how does it mitigate buffer overflow exploits? Can it be bypassed?
-4.  What is a NOP Sled and why do attackers use it?
-5.  Explain the TOCTTOU vulnerability using a file system example. What is the fundamental problem that allows this?
-6.  List 4 unsafe C library functions and suggest a safer alternative for each.
-7.  Define Virus, Worm, and Trojan Horse. What are the key differences in how they operate and propagate?
-8.  Describe the difference between Signature-based malware detection and Heuristic/Anomaly-based detection. What are the main advantages and disadvantages of each?
-9.  What is Integer Overflow and how can it become a security vulnerability?
-10. Explain the principle of "Least Privilege" in the context of software security.
-
----
-
-## **XI. Thought-Provoking Questions & Connections**
-
-*   Why were languages like C/C++ designed without mandatory bounds checking, given the risks? (Connection: Performance vs. Safety tradeoffs in language design).
-*   How effective is ASLR on 32-bit systems compared to 64-bit systems? Why? (Connection: Address space size, entropy).
-*   Could a buffer overflow vulnerability exist in a memory-safe language like Java or Python? If so, where might it occur (e.g., in native code libraries they call)?
-*   How does the rise of IoT devices, often running C/C++ based firmware with limited resources for defenses like ASLR/DEP, impact the landscape of buffer overflow attacks?
-*   If DEP prevents executing shellcode on the stack, why is Return-Oriented Programming (ROP) still an effective technique?
-*   How might machine learning be applied to anomaly-based malware detection? What challenges would it face?
-
----
-
-## **XII. Further Research & Clarification Flags**
-
-*   `[Clarification Needed]` The specific implementation details of Microsoft's `/GS` handler check and potential bypasses could be explored further.
-*   `[Further Research Recommended]` Investigate modern ROP techniques and countermeasures like Control-Flow Integrity (CFI).
-*   `[Further Research Recommended]` Explore Heap Spraying techniques used in conjunction with heap overflows.
-*   `[Further Research Recommended]` Look into specific historical malware examples mentioned (e.g., Morris Worm, Stuxnet, WannaCry) to see which vulnerabilities they exploited.
-*   `[Clarification Needed]` The lecture mentioned "Trudy's Challenges" - confirm if "Trudy" is a standard persona used in the course or just an illustrative name.
-
----
-
-## **XIII. Memory Aids (Mnemonics)**
-
-*   **Unsafe C Functions:** "**G**ood **S**tudents **S**eldom **S**peak **S**loppily" (`gets`, `strcpy`, `strcat`, `sprintf`, `scanf(%s)`)
-*   **Defense Categories:** "**C**ats **R**un" (Compile-time, Run-time)
-*   **Stack Overflow Targets:** "**L**ocal **V**ars, **S**aved **F**rame **P**ointer, **R**eturn **A**ddress" (Order they typically appear on stack relative to buffer)
-*   **Malware Types (Basic):** "**V**ery **W**ily **T**hreats" (Virus, Worm, Trojan)
-
----
 
 ## **XIV. Potential Real-World Examples & Applications**
 
@@ -704,15 +658,7 @@ int main(int argc, char *argv[]) {
 
 ---
 
-## **XVI. Cybersecurity Search Tools (From List)**
-
-*   *This section seems like a separate list provided for reference, potentially useful for Open Source Intelligence (OSINT) or threat research, but not directly tied to explaining buffer overflows themselves. It's good context for broader cybersecurity.*
-*   **Summary:** The list provides ~30 online tools for security research, covering areas like leaked credentials (Dehashed), DNS data (SecurityTrails), exploit archives (ExploitDB), device scanning (Shodan, Censys, ZoomEye), threat intelligence (AlienVault, Pulsedive), code searching (Grep App, SearchCode), and vulnerability databases (Vulners).
-*   **Connection:** Tools like ExploitDB, Vulners, Packet Storm Security directly relate as they archive known vulnerabilities, including buffer overflows and their exploits. Tools like Shodan could find potentially vulnerable devices running outdated services.
-
----
-
-## **XVII. Mind Map / Concept Diagram (Text-Based)**
+## **XVI. Mind Map / Concept Diagram (Text-Based)**
 
 ```
 Software Security Vulnerabilities

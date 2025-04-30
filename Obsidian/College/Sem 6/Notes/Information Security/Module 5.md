@@ -1,7 +1,6 @@
 
 ## I. Introduction & Objectives
 
-*   This lecture focuses on the intersection of computer security, legal frameworks, and ethical considerations.
 *   **Chapter 11 Objectives:**
     1.  Understand **copyrights, patents, and trade secrets** for software protection.
     2.  Recognize how **information differs** from traditional assets.
@@ -96,7 +95,7 @@ Information possesses unique qualities that differentiate it from tangible asset
 
 *   **Implication:** These characteristics challenge traditional legal concepts based on physical property.
 *   **Connection:** Economics (marginal cost, non-rivalrous goods), Information Theory.
-*   **Thought Question:** How should legal frameworks evolve to better address the unique nature of digital information assets?
+
 
 ---
 
@@ -125,7 +124,7 @@ The relationship between employees and employers involves specific consideration
 *   **Connection:** Contract Law, Labor Law, Intellectual Property Law.
 *   **Real-world Example:** Disputes over ownership of code written by an employee using company equipment but outside of core job duties.
 *   🚩 **Further Research:** Investigate the specifics of "work for hire" agreements and "shop rights" in your jurisdiction.
-*   **Thought Question:** What are the ethical considerations for employees using skills/knowledge gained at one company when moving to a competitor?
+
 
 ---
 
@@ -152,7 +151,7 @@ A structured process for reporting software flaws aims to balance security impro
 
 *   **Connection:** Cybersecurity Risk Management, Public Relations, Ethics.
 *   **Real-world Example:** Google's Project Zero often follows a strict disclosure timeline (e.g., 90 days).
-*   **Thought Question:** What are the potential negative consequences if vendors *don't* follow a responsible disclosure process? What if researchers disclose immediately without vendor notification?
+
 
 ---
 
